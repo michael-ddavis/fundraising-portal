@@ -1,0 +1,10 @@
+<div>
+  <!-- Header -->
+  <app-dashboard-header></app-dashboard-header>
+  <!-- end Header -->
+  <div class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+    <div summary-card [fundSummary]="funds[0]"></div>
+    <div summary-card [fundSummary]="funds[1]"></div>
+    <div dashboard-table class="md:col-span-2 xl:col-span-3"></div>
+  </div>
+</div>

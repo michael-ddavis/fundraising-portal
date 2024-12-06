@@ -1,0 +1,30 @@
+<div class="flex-col rounded-lg bg-background px-8 py-8 sm:flex-row">
+  <div class="mb-4 flex items-center justify-between">
+    <div class="flex-col items-center">
+      <h3 class="text-md font-bold text-foreground">Donations</h3>
+      <span class="text-xs text-muted-foreground">Updated 10 minutes ago</span>
+    </div>
+  </div>
+
+  <div class="relative overflow-x-auto">
+    <table class="w-full table-auto">
+      <!--Table head-->
+      <thead class="text-xs uppercase text-muted-foreground">
+        <tr>
+          <th class="py-3 text-left">Name</th>
+          <th class="py-3 text-right">Amount</th>
+          <th class="py-3 text-right">Date</th>
+          <th class="py-3 text-right">Type</th>
+          <th class="py-3 text-right">Status</th>
+        </tr>
+      </thead>
+      <!--end Table head-->
+      <!--Table body-->
+      <tbody>
+        <tr *ngFor="let fund of individualFunds" [fund]="fund" table-item
+          class="border-b border-dashed border-border hover:bg-card"></tr>
+      </tbody>
+      <!--end::Table body-->
+    </table>
+  </div>
+</div>
